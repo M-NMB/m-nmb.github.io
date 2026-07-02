@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /ja/
-subtitle: 博士研究員（ポスドク）・<a href='https://www.jfcc.or.jp/' target='_blank'>一般財団法人ファインセラミックスセンター（JFCC）</a>
+subtitle: 博士研究員（ポスドク）・一般財団法人ファインセラミックスセンター（JFCC）
 
 profile:
   align: right
@@ -20,11 +20,21 @@ latest_posts:
   enabled: false
 ---
 
+<style>
+  .post-title { font-weight: 700; }
+</style>
+
 <div style="margin-bottom: 1.5rem;">
   <a href="/" style="display: inline-block; padding: 0.2rem 0.9rem; border: 1px solid rgba(128,128,128,0.5); border-radius: 999px; font-size: 0.85rem; text-decoration: none;">🌐 English page</a>
 </div>
 
-水素化物イオン（H⁻）・フッ化物イオン（F⁻）・窒化物イオン（N³⁻）など複数のアニオン種を含む**複合アニオン化合物**を対象に、エピタキシャル薄膜合成と電子状態計算の両面から研究しています。
+#### 研究テーマ
+
+- 複合アニオン化学：酸水素化物、酸フッ化物、酸窒化物
+- エピタキシャル薄膜成長とトポタクティック反応
+- 垂直磁気異方性とスピン軌道相互作用
+- 遷移金属酸化物におけるサイト間電荷移動
+- 第一原理計算（DFT）
 
 #### 職歴
 
@@ -32,14 +42,14 @@ latest_posts:
   <div style="position: relative; padding-left: 1.75rem; padding-bottom: 1.5rem; border-left: 2px solid rgba(128,128,128,0.35); margin-left: 0.4rem;">
     <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #6c9ac8;"></span>
     <div style="font-weight: 600;">博士研究員（ポスドク）</div>
-    <div><a href="https://www.jfcc.or.jp/" target="_blank">一般財団法人ファインセラミックスセンター（JFCC）</a></div>
+    <div>一般財団法人ファインセラミックスセンター（JFCC）</div>
     <div style="font-size: 0.85em; opacity: 0.7;">2026年2月 – 現在 · 名古屋</div>
     <div style="font-size: 0.95em; margin-top: 0.25rem;">ナノ構造研究所 計算材料グループ</div>
   </div>
   <div style="position: relative; padding-left: 1.75rem; padding-bottom: 0.5rem; border-left: 2px solid transparent; margin-left: 0.4rem;">
     <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #a9b6c2;"></span>
     <div style="font-weight: 600;">研究員</div>
-    <div><a href="https://www.asahi-kasei.com/jp/" target="_blank">旭化成株式会社</a></div>
+    <div>旭化成株式会社</div>
     <div style="font-size: 0.85em; opacity: 0.7;">2024年4月 – 2026年1月 · （勤務地：あとで記入）</div>
     <div style="font-size: 0.95em; margin-top: 0.25rem;">（部署：あとで記入）</div>
   </div>
@@ -51,33 +61,25 @@ latest_posts:
   <div style="position: relative; padding-left: 1.75rem; padding-bottom: 1.5rem; border-left: 2px solid rgba(128,128,128,0.35); margin-left: 0.4rem;">
     <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #6c9ac8;"></span>
     <div style="font-weight: 600;">博士（工学）</div>
-    <div><a href="https://www.kyoto-u.ac.jp/ja" target="_blank">京都大学</a></div>
+    <div>京都大学</div>
     <div style="font-size: 0.85em; opacity: 0.7;">2021年4月 – 2024年3月 · 京都</div>
-    <div style="font-size: 0.95em; margin-top: 0.25rem;">大学院工学研究科（<a href="http://www.ehcc.kyoto-u.ac.jp/eh30/" target="_blank">陰山研究室</a>）<br>京都大学 科学技術イノベーション創出フェローシップ（マテリアル分野）</div>
+    <div style="font-size: 0.95em; margin-top: 0.25rem;">大学院工学研究科（陰山研究室）<br>京都大学 科学技術イノベーション創出フェローシップ（マテリアル分野）</div>
   </div>
   <div style="position: relative; padding-left: 1.75rem; padding-bottom: 1.5rem; border-left: 2px solid rgba(128,128,128,0.35); margin-left: 0.4rem;">
     <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #a9b6c2;"></span>
     <div style="font-weight: 600;">修士（工学）</div>
-    <div><a href="https://www.kyoto-u.ac.jp/ja" target="_blank">京都大学</a></div>
+    <div>京都大学</div>
     <div style="font-size: 0.85em; opacity: 0.7;">2019年4月 – 2021年3月 · 京都</div>
     <div style="font-size: 0.95em; margin-top: 0.25rem;">大学院工学研究科（陰山研究室）</div>
   </div>
   <div style="position: relative; padding-left: 1.75rem; padding-bottom: 0.5rem; border-left: 2px solid transparent; margin-left: 0.4rem;">
     <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #a9b6c2;"></span>
     <div style="font-weight: 600;">学士（工学）</div>
-    <div><a href="https://www.kyoto-u.ac.jp/ja" target="_blank">京都大学</a></div>
+    <div>京都大学</div>
     <div style="font-size: 0.85em; opacity: 0.7;">2015年4月 – 2019年3月 · 京都</div>
     <div style="font-size: 0.95em; margin-top: 0.25rem;">工学部工業化学科</div>
   </div>
 </div>
-
-#### 研究テーマ
-
-- 複合アニオン化学：酸水素化物、酸フッ化物、酸窒化物
-- エピタキシャル薄膜成長とトポタクティック反応
-- 垂直磁気異方性とスピン軌道相互作用
-- 遷移金属酸化物におけるサイト間電荷移動
-- 第一原理計算（DFT）
 
 <!--
 #### 趣味
