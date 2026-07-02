@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Researcher, <a href='https://www.jfcc.or.jp/en/' target='_blank'>Japan Fine Ceramics Center (JFCC)</a> &nbsp;|&nbsp; <a href='/ja/'>日本語</a>
+subtitle: Postdoctoral Researcher, <a href='https://www.jfcc.or.jp/en/' target='_blank'>Japan Fine Ceramics Center (JFCC)</a>
 
 profile:
   align: right
@@ -20,21 +20,58 @@ latest_posts:
   enabled: false
 ---
 
-#### Current Position
+<div style="margin-bottom: 1.5rem;">
+  <a href="/ja/" style="display: inline-block; padding: 0.2rem 0.9rem; border: 1px solid rgba(128,128,128,0.5); border-radius: 999px; font-size: 0.85rem; text-decoration: none;">🌐 日本語ページへ</a>
+</div>
 
-Postdoctoral researcher at the [Japan Fine Ceramics Center (JFCC)](https://www.jfcc.or.jp/en/), Nano Structures Research Laboratory, Computational Materials Group (Feb. 2026–present).
+I am a postdoctoral researcher working on **complex anion compounds**—transition-metal oxides incorporating multiple anion species such as hydrides (H⁻), fluorides (F⁻), and nitrides (N³⁻)—through both epitaxial thin film synthesis and electronic structure calculations.
 
-#### Biography
+#### Experience
 
-- **Feb. 2026 – present** &nbsp; Postdoctoral Researcher, Japan Fine Ceramics Center (JFCC)
-- **Apr. 2024 – Jan. 2026** &nbsp; Researcher, Asahi Kasei Corporation
-- **Mar. 2024** &nbsp; Ph.D. in Engineering, Kyoto University (Prof. Hiroshi Kageyama's group)
-- **Mar. 2021** &nbsp; M.Eng., Graduate School of Engineering, Kyoto University
-- **Mar. 2019** &nbsp; B.Eng., Undergraduate School of Industrial Chemistry, Kyoto University
+<div style="margin: 1rem 0 2rem;">
+  <div style="position: relative; padding-left: 1.75rem; padding-bottom: 1.5rem; border-left: 2px solid rgba(128,128,128,0.35); margin-left: 0.4rem;">
+    <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #6c9ac8;"></span>
+    <div style="font-weight: 600;">Postdoctoral Researcher</div>
+    <div><a href="https://www.jfcc.or.jp/en/" target="_blank">Japan Fine Ceramics Center (JFCC)</a></div>
+    <div style="font-size: 0.85em; opacity: 0.7;">Feb. 2026 – Present · Nagoya, Japan</div>
+    <div style="font-size: 0.95em; margin-top: 0.25rem;">Nano Structures Research Laboratory, Computational Materials Group</div>
+  </div>
+  <div style="position: relative; padding-left: 1.75rem; padding-bottom: 0.5rem; border-left: 2px solid transparent; margin-left: 0.4rem;">
+    <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #a9b6c2;"></span>
+    <div style="font-weight: 600;">Researcher</div>
+    <div><a href="https://www.asahi-kasei.com/" target="_blank">Asahi Kasei Corporation</a></div>
+    <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2024 – Jan. 2026 · (Location — to be filled)</div>
+    <div style="font-size: 0.95em; margin-top: 0.25rem;">(Department — to be filled)</div>
+  </div>
+</div>
+
+#### Education
+
+<div style="margin: 1rem 0 2rem;">
+  <div style="position: relative; padding-left: 1.75rem; padding-bottom: 1.5rem; border-left: 2px solid rgba(128,128,128,0.35); margin-left: 0.4rem;">
+    <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #6c9ac8;"></span>
+    <div style="font-weight: 600;">Ph.D. in Engineering</div>
+    <div><a href="https://www.kyoto-u.ac.jp/en" target="_blank">Kyoto University</a></div>
+    <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2021 – Mar. 2024 · Kyoto, Japan</div>
+    <div style="font-size: 0.95em; margin-top: 0.25rem;">Graduate School of Engineering, <a href="http://www.ehcc.kyoto-u.ac.jp/eh30/" target="_blank">Kageyama Laboratory</a><br>Kyoto University Science and Technology Innovation Fellowship (Materials Science)</div>
+  </div>
+  <div style="position: relative; padding-left: 1.75rem; padding-bottom: 1.5rem; border-left: 2px solid rgba(128,128,128,0.35); margin-left: 0.4rem;">
+    <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #a9b6c2;"></span>
+    <div style="font-weight: 600;">M.Eng.</div>
+    <div><a href="https://www.kyoto-u.ac.jp/en" target="_blank">Kyoto University</a></div>
+    <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2019 – Mar. 2021 · Kyoto, Japan</div>
+    <div style="font-size: 0.95em; margin-top: 0.25rem;">Graduate School of Engineering (Kageyama Laboratory)</div>
+  </div>
+  <div style="position: relative; padding-left: 1.75rem; padding-bottom: 0.5rem; border-left: 2px solid transparent; margin-left: 0.4rem;">
+    <span style="position: absolute; left: -0.5rem; top: 0.15rem; width: 0.85rem; height: 0.85rem; border-radius: 50%; background: #a9b6c2;"></span>
+    <div style="font-weight: 600;">B.Eng.</div>
+    <div><a href="https://www.kyoto-u.ac.jp/en" target="_blank">Kyoto University</a></div>
+    <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2015 – Mar. 2019 · Kyoto, Japan</div>
+    <div style="font-size: 0.95em; margin-top: 0.25rem;">Faculty of Engineering, Undergraduate School of Industrial Chemistry</div>
+  </div>
+</div>
 
 #### Research Interests
-
-My research focuses on **complex anion compounds**—transition-metal oxides incorporating multiple anion species such as hydrides (H⁻), fluorides (F⁻), and nitrides (N³⁻)—with emphasis on epitaxial thin film synthesis and electronic structure calculations.
 
 - Complex anion chemistry: oxyhydrides, oxyfluorides, oxynitrides
 - Epitaxial thin film growth and topotactic reactions
