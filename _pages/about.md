@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Researcher, <a href='https://www.jfcc.or.jp/en/' target='_blank'>Japan Fine Ceramics Center (JFCC)</a>
+subtitle: Postdoctoral Researcher, <a href='https://www.jfcc.or.jp/en/' target='_blank'>Japan Fine Ceramics Center (JFCC)</a> &nbsp;|&nbsp; <a href='/ja/'>日本語</a>
 
 profile:
   align: right
@@ -20,14 +20,30 @@ latest_posts:
   enabled: false
 ---
 
-I am a postdoctoral researcher at the [Japan Fine Ceramics Center (JFCC)](https://www.jfcc.or.jp/en/), Nano Structures Research Laboratory, Computational Materials Group.
+#### Current Position
+
+Postdoctoral researcher at the [Japan Fine Ceramics Center (JFCC)](https://www.jfcc.or.jp/en/), Nano Structures Research Laboratory, Computational Materials Group (Feb. 2026–present).
+
+#### Biography
+
+- **Feb. 2026 – present** &nbsp; Postdoctoral Researcher, Japan Fine Ceramics Center (JFCC)
+- **Apr. 2024 – Jan. 2026** &nbsp; Researcher, Asahi Kasei Corporation
+- **Mar. 2024** &nbsp; Ph.D. in Engineering, Kyoto University (Prof. Hiroshi Kageyama's group)
+- **Mar. 2021** &nbsp; M.Eng., Graduate School of Engineering, Kyoto University
+- **Mar. 2019** &nbsp; B.Eng., Undergraduate School of Industrial Chemistry, Kyoto University
+
+#### Research Interests
+
 My research focuses on **complex anion compounds**—transition-metal oxides incorporating multiple anion species such as hydrides (H⁻), fluorides (F⁻), and nitrides (N³⁻)—with emphasis on epitaxial thin film synthesis and electronic structure calculations.
 
-**Research interests:**
 - Complex anion chemistry: oxyhydrides, oxyfluorides, oxynitrides
 - Epitaxial thin film growth and topotactic reactions
 - Perpendicular magnetic anisotropy and spin–orbit coupling
 - Intersite charge transfer in transition-metal oxides
 - First-principles calculations (DFT)
 
-I received my Ph.D. from the Graduate School of Engineering, Kyoto University in 2024, under the supervision of Prof. Hiroshi Kageyama.
+<!--
+#### Hobbies
+
+TODO: add hobbies here
+-->
