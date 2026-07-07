@@ -10,18 +10,17 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <style>
-  .publications h2.bibliography {
-    display: inline-flex;
-    margin: 2.3rem 0 1rem;
-    padding: 0.25rem 0.75rem;
-    border-top: 0;
-    border-radius: 0.25rem;
-    background-color: var(--global-theme-color);
-    color: var(--global-card-bg-color) !important;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.1;
-  }
+.publications h2.bibliography {
+  display: block;
+  margin: 2.4rem 0 1rem;
+  padding: 0;
+  border-top: 0;
+  color: var(--global-theme-color);
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: left;
+}
 
   .publications ol.bibliography {
     padding-left: 0;
