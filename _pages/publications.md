@@ -9,6 +9,54 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
+<style>
+  .publications h2.bibliography {
+    margin-top: 2rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.22);
+    font-size: 1.25rem;
+  }
+
+  .publications ol.bibliography {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .publications ol.bibliography > li {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.16);
+  }
+
+  .publications .abbr {
+    display: none;
+  }
+
+  .publications .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .publications .row > .col-sm-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .publications .title {
+    line-height: 1.35;
+  }
+
+  .publications .author,
+  .publications .periodical {
+    margin-top: 0.25rem;
+  }
+
+  .publications .links {
+    margin-top: 0.45rem;
+  }
+</style>
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
