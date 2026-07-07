@@ -11,10 +11,16 @@ nav_order: 2
 
 <style>
   .publications h2.bibliography {
-    margin-top: 2rem;
-    padding-top: 0.6rem;
-    border-top: 1px solid rgba(128, 128, 128, 0.22);
-    font-size: 1.25rem;
+    display: inline-flex;
+    margin: 2.3rem 0 1rem;
+    padding: 0.25rem 0.75rem;
+    border-top: 0;
+    border-radius: 0.25rem;
+    background-color: var(--global-theme-color);
+    color: var(--global-card-bg-color) !important;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.1;
   }
 
   .publications ol.bibliography {
