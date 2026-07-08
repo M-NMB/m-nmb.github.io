@@ -10,17 +10,17 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <style>
-.publications h2.bibliography {
-  display: block;
-  margin: 2.4rem 0 1rem;
-  padding: 0;
-  border-top: 0;
-  color: var(--global-theme-color);
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.1;
-  text-align: left;
-}
+  .publications h2.bibliography {
+    display: block;
+    margin: 2.4rem 0 1rem;
+    padding: 0;
+    border-top: 0;
+    color: var(--global-theme-color);
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+  }
 
   .publications ol.bibliography {
     padding-left: 0;

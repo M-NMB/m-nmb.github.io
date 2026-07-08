@@ -14,7 +14,7 @@ selected_papers: false
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: false
   limit: 3
 
@@ -33,20 +33,32 @@ latest_posts:
 
   .profile-timeline-item {
     position: relative;
-    padding-left: 1.75rem;
+    padding-left: 2.15rem;
     padding-bottom: 1.5rem;
-    border-left: 2px solid rgba(128, 128, 128, 0.35);
-    margin-left: 0.4rem;
+  }
+
+  .profile-timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0.74rem;
+    bottom: -0.74rem;
+    left: calc(0.4rem - 1px);
+    width: 2px;
+    background: rgba(128, 128, 128, 0.35);
   }
 
   .profile-timeline-item:last-child {
     padding-bottom: 0.5rem;
-    border-left-color: transparent;
+  }
+
+  .profile-timeline-item:last-child::before {
+    display: none;
   }
 
   .profile-timeline-marker {
     position: absolute;
-    left: 0;
+    z-index: 1;
+    left: 0.4rem;
     top: 0.1rem;
     width: 1.275rem;
     height: 1.275rem;
@@ -55,16 +67,60 @@ latest_posts:
     transform: translateX(-50%);
   }
 
-  .profile-timeline-marker.is-highlight {
-    background: #6c9ac8;
-  }
-
   .profile-timeline-marker.is-current {
     top: -0.02rem;
     width: 1.53rem;
     height: 1.53rem;
     background: #6c9ac8;
     box-shadow: 0 0 0 3px var(--global-bg-color);
+  }
+
+  .home-news {
+    margin: 1.25rem 0 2rem;
+  }
+
+  .home-news-title {
+    margin-bottom: 0.75rem;
+    color: var(--global-theme-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .home-news-box {
+    max-height: 20rem;
+    overflow-y: auto;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.35rem;
+    background: var(--global-card-bg-color, var(--global-bg-color));
+  }
+
+  .home-news-item {
+    display: grid;
+    grid-template-columns: 8.25rem 1fr;
+    gap: 0.9rem;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.16);
+  }
+
+  .home-news-item:last-child {
+    border-bottom: 0;
+  }
+
+  .home-news-item time {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 575.98px) {
+    .home-news-box {
+      max-height: 24rem;
+    }
+
+    .home-news-item {
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+    }
   }
 </style>
 
@@ -79,6 +135,19 @@ latest_posts:
 - Perpendicular magnetic anisotropy and spin–orbit coupling
 - Intersite charge transfer in transition-metal oxides
 - First-principles calculations (DFT)
+
+<section class="home-news" aria-labelledby="home-news-heading">
+  <h4 id="home-news-heading" class="home-news-title">NEWS</h4>
+  <div class="home-news-box">
+    {% assign home_news = site.news | sort: "date" | reverse %}
+    {% for item in home_news %}
+      <article class="home-news-item">
+        <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %d, %Y" }}</time>
+        <div>{{ item.en }}</div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
 #### Experience
 
@@ -103,7 +172,7 @@ latest_posts:
 
 <div class="profile-timeline">
   <div class="profile-timeline-item">
-    <span class="profile-timeline-marker is-highlight"></span>
+    <span class="profile-timeline-marker"></span>
     <div style="font-weight: 600;">Ph.D. in Engineering</div>
     <div>Kyoto University</div>
     <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2021 – Mar. 2024 · Kyoto, Japan</div>
