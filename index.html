@@ -15,30 +15,38 @@
 
   .profile-timeline-item {
     position: relative;
-    padding-left: 1.75rem;
+    padding-left: 2.15rem;
     padding-bottom: 1.5rem;
-    border-left: 2px solid rgba(128, 128, 128, 0.35);
-    margin-left: 0.4rem;
+  }
+
+  .profile-timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0.74rem;
+    bottom: -0.74rem;
+    left: calc(0.4rem - 1px);
+    width: 2px;
+    background: rgba(128, 128, 128, 0.35);
   }
 
   .profile-timeline-item:last-child {
     padding-bottom: 0.5rem;
-    border-left-color: transparent;
+  }
+
+  .profile-timeline-item:last-child::before {
+    display: none;
   }
 
   .profile-timeline-marker {
     position: absolute;
-    left: 0;
+    z-index: 1;
+    left: 0.4rem;
     top: 0.1rem;
     width: 1.275rem;
     height: 1.275rem;
     border-radius: 50%;
     background: #a9b6c2;
     transform: translateX(-50%);
-  }
-
-  .profile-timeline-marker.is-highlight {
-    background: #6c9ac8;
   }
 
   .profile-timeline-marker.is-current {
@@ -48,7 +56,55 @@
     background: #6c9ac8;
     box-shadow: 0 0 0 3px var(--global-bg-color);
   }
-</style> <div style="margin-bottom: 1.5rem;"> <a href="/ja/" style="display: inline-block; padding: 0.2rem 0.9rem; border: 1px solid rgba(128,128,128,0.5); border-radius: 999px; font-size: 0.85rem; text-decoration: none;">🌐 日本語ページへ</a> </div> <h4 id="research-interests">Research Interests</h4> <ul> <li>Complex anion chemistry: oxyhydrides, oxyfluorides, oxynitrides</li> <li>Epitaxial thin film growth and topotactic reactions</li> <li>Perpendicular magnetic anisotropy and spin–orbit coupling</li> <li>Intersite charge transfer in transition-metal oxides</li> <li>First-principles calculations (DFT)</li> </ul> <h4 id="experience">Experience</h4> <div class="profile-timeline"> <div class="profile-timeline-item"> <span class="profile-timeline-marker is-current"></span> <div style="font-weight: 600;">Postdoctoral Researcher</div> <div>Japan Fine Ceramics Center (JFCC)</div> <div style="font-size: 0.85em; opacity: 0.7;">Feb. 2026 – Present · Nagoya, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Nano Structures Research Laboratory, Computational Materials Group</div> </div> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">Researcher</div> <div>Asahi Kasei Corporation</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2024 – Jan. 2026 · (Location — to be filled)</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">(Department — to be filled)</div> </div> </div> <h4 id="education">Education</h4> <div class="profile-timeline"> <div class="profile-timeline-item"> <span class="profile-timeline-marker is-highlight"></span> <div style="font-weight: 600;">Ph.D. in Engineering</div> <div>Kyoto University</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2021 – Mar. 2024 · Kyoto, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Graduate School of Engineering, Kageyama Laboratory<br>Kyoto University Science and Technology Innovation Fellowship (Materials Science)</div> </div> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">M.Eng.</div> <div>Kyoto University</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2019 – Mar. 2021 · Kyoto, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Graduate School of Engineering (Kageyama Laboratory)</div> </div> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">B.Eng.</div> <div>Kyoto University</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2015 – Mar. 2019 · Kyoto, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Faculty of Engineering, Undergraduate School of Industrial Chemistry</div> </div> </div> </div> <h2> <a href="/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jul 07, 2026</th> <td> Updated the publications page with complete bibliography details, a cleaner list layout, and clearer year labels. </td> </tr> </table> </div> </div> <div class="social"> <div class="contact-icons"> <a href="https://github.com/m-nmb" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://orcid.org/0000-0002-0118-9832" title="Orcid id" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a> </div> <div class="contact-note">Feel free to reach out via email. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Morito NAMBA. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+
+  .home-news {
+    margin: 1.25rem 0 2rem;
+  }
+
+  .home-news-title {
+    margin-bottom: 0.75rem;
+    color: var(--global-theme-color);
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .home-news-box {
+    max-height: 20rem;
+    overflow-y: auto;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.35rem;
+    background: var(--global-card-bg-color, var(--global-bg-color));
+  }
+
+  .home-news-item {
+    display: grid;
+    grid-template-columns: 8.25rem 1fr;
+    gap: 0.9rem;
+    padding: 0.75rem 0.9rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.16);
+  }
+
+  .home-news-item:last-child {
+    border-bottom: 0;
+  }
+
+  .home-news-item time {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 575.98px) {
+    .home-news-box {
+      max-height: 24rem;
+    }
+
+    .home-news-item {
+      grid-template-columns: 1fr;
+      gap: 0.2rem;
+    }
+  }
+</style> <div style="margin-bottom: 1.5rem;"> <a href="/ja/" style="display: inline-block; padding: 0.2rem 0.9rem; border: 1px solid rgba(128,128,128,0.5); border-radius: 999px; font-size: 0.85rem; text-decoration: none;">🌐 日本語ページへ</a> </div> <h4 id="research-interests">Research Interests</h4> <ul> <li>Complex anion chemistry: oxyhydrides, oxyfluorides, oxynitrides</li> <li>Epitaxial thin film growth and topotactic reactions</li> <li>Perpendicular magnetic anisotropy and spin–orbit coupling</li> <li>Intersite charge transfer in transition-metal oxides</li> <li>First-principles calculations (DFT)</li> </ul> <section class="home-news" aria-labelledby="home-news-heading"> <h4 id="home-news-heading" class="home-news-title">NEWS</h4> <div class="home-news-box"> <article class="home-news-item"> <time datetime="2026-07-07T00:00:00+00:00">Jul 07, 2026</time> <div>Launched this website!</div> </article> <article class="home-news-item"> <time datetime="2026-02-01T00:00:00+00:00">Feb 01, 2026</time> <div>Returned to academia as a postdoctoral researcher at JFCC. I will keep pushing forward!</div> </article> <article class="home-news-item"> <time datetime="2024-03-31T00:00:00+00:00">Mar 31, 2024</time> <div>Received my Ph.D. from Kyoto University's Kageyama Laboratory.</div> </article> </div> </section> <h4 id="experience">Experience</h4> <div class="profile-timeline"> <div class="profile-timeline-item"> <span class="profile-timeline-marker is-current"></span> <div style="font-weight: 600;">Postdoctoral Researcher</div> <div>Japan Fine Ceramics Center (JFCC)</div> <div style="font-size: 0.85em; opacity: 0.7;">Feb. 2026 – Present · Nagoya, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Nano Structures Research Laboratory, Computational Materials Group</div> </div> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">Researcher</div> <div>Asahi Kasei Corporation</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2024 – Jan. 2026 · (Location — to be filled)</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">(Department — to be filled)</div> </div> </div> <h4 id="education">Education</h4> <div class="profile-timeline"> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">Ph.D. in Engineering</div> <div>Kyoto University</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2021 – Mar. 2024 · Kyoto, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Graduate School of Engineering, Kageyama Laboratory<br>Kyoto University Science and Technology Innovation Fellowship (Materials Science)</div> </div> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">M.Eng.</div> <div>Kyoto University</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2019 – Mar. 2021 · Kyoto, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Graduate School of Engineering (Kageyama Laboratory)</div> </div> <div class="profile-timeline-item"> <span class="profile-timeline-marker"></span> <div style="font-weight: 600;">B.Eng.</div> <div>Kyoto University</div> <div style="font-size: 0.85em; opacity: 0.7;">Apr. 2015 – Mar. 2019 · Kyoto, Japan</div> <div style="font-size: 0.95em; margin-top: 0.25rem;">Faculty of Engineering, Undergraduate School of Industrial Chemistry</div> </div> </div> </div> <div class="social"> <div class="contact-icons"> <a href="https://github.com/m-nmb" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://orcid.org/0000-0002-0118-9832" title="Orcid id" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a> </div> <div class="contact-note">Feel free to reach out via email. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Morito NAMBA. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -448,8 +504,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-updated-the-publications-page-with-complete-bibliography-details-a-cleaner-list-layout-and-clearer-year-labels",
-          title: 'Updated the publications page with complete bibliography details, a cleaner list layout, and...',
+            },},{id: "news-received-my-ph-d-from-kyoto-university-s-kageyama-laboratory",
+          title: 'Received my Ph.D. from Kyoto University’s Kageyama Laboratory.',
+          description: "",
+          section: "News",},{id: "news-returned-to-academia-as-a-postdoctoral-researcher-at-jfcc-i-will-keep-pushing-forward",
+          title: 'Returned to academia as a postdoctoral researcher at JFCC. I will keep pushing...',
+          description: "",
+          section: "News",},{id: "news-launched-this-website",
+          title: 'Launched this website!',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
