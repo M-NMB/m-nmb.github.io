@@ -3,7 +3,7 @@ const { preparePage, compareWithBaseline } = require("./helpers");
 
 const routes = [
   { path: "al-folio/", id: "home" },
-  { path: "al-folio/projects/", id: "projects" },
+  { path: "al-folio/research/", id: "research" },
   { path: "al-folio/publications/", id: "publications" },
   { path: "al-folio/repositories/", id: "repositories" },
 ];

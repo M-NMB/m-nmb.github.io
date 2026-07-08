@@ -182,24 +182,13 @@ test("inline code uses compact normal-weight typography", async ({ page }) => {
   expect(inlineCodeStyle.fontWeight).toBeLessThanOrEqual(400);
 });
 
-test("project cards hover with upward lift animation", async ({ page }, testInfo) => {
-  test.skip(testInfo.project.name === "mobile", "hover-specific assertion is desktop-only");
-
+test("research page renders research themes", async ({ page }) => {
   await preparePage(page, "light");
-  await page.goto("/al-folio/projects/", { waitUntil: "networkidle" });
+  await page.goto("/al-folio/research/", { waitUntil: "networkidle" });
   await stabilizeVisuals(page);
 
-  const card = page.locator(".projects .hoverable").first();
-  await expect(card).toBeVisible();
-
-  const before = await card.boundingBox();
-  await card.hover();
-  await page.waitForTimeout(150);
-  const after = await card.boundingBox();
-
-  expect(before).not.toBeNull();
-  expect(after).not.toBeNull();
-  expect(after.y).toBeLessThan(before.y);
+  await expect(page.getByRole("heading", { name: "Complex Anion Chemistry" })).toBeVisible();
+  await expect(page.getByText("First-principles calculations")).toBeVisible();
 });
 
 test("teaching calendar toggle has pointer cursor and toggles calendar visibility", async ({ page }) => {
@@ -316,7 +305,7 @@ test("core pages no longer emit jQuery-style runtime errors", async ({ page }) =
   });
 
   await preparePage(page, "light");
-  const pages = ["/al-folio/", "/al-folio/projects/", "/al-folio/blog/2024/photo-gallery/", "/al-folio/blog/2023/tables/"];
+  const pages = ["/al-folio/", "/al-folio/research/", "/al-folio/blog/2024/photo-gallery/", "/al-folio/blog/2023/tables/"];
 
   for (const target of pages) {
     await page.goto(target, { waitUntil: "networkidle" });

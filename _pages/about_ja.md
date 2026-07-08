@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /ja/
 subtitle: 博士研究員（ポスドク）・一般財団法人ファインセラミックスセンター（JFCC）
 
